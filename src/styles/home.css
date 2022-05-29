@@ -1,0 +1,45 @@
+:root {
+    --background-color: #0D1117;
+    --white: #fff;
+    --primary-color: #D61C4E;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.card-flex {
+    display: flex;
+}
+
+.card {
+    width: 20rem;
+}
+
+.card-text span {
+    font-size: 1.5rem;
+}
+
+.app-name {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-top: 1.5rem;
+}
+
+.quiz-btn {
+    margin: -1rem 0 0 -1rem;
+}
+
+.quiz-btn button {
+    border: solid 3px var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.quiz-btn button:hover {
+    color: var(--primary-color);
+    background-color: var(--white);
+}
