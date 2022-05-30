@@ -1,4 +1,5 @@
-import { QuizCard, Navbar } from "../components"
+import { QuizCard } from "../components"
+import { Navbar } from "../layout/navbar/navbar"
 export const Home = () => {
     return (
         <div>
