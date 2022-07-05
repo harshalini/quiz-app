@@ -1,7 +1,6 @@
 @import url("https://liniui.netlify.app/component.css");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap');
-@import url(./styles/home.css);
-
+@import url(./styles/allStyles.css);
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
