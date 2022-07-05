@@ -1,0 +1,58 @@
+:root {
+    --red: #B61919;
+    --orange: #FF2626;
+    --light-coral: #FF6B6B;
+}
+.rules-heading {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--white);
+    margin-top: 1rem;
+}
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+    gap: 1rem;
+}
+.rules-grid li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: var(--white);
+    padding: 3.5rem;
+    border-radius: 50%;
+    border: solid 7px var(--primary-color);
+}
+li.quiz-luck {
+    background-color: var(--background-color);
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    animation: flicker 3s infinite alternate;
+    font-weight: 900;
+    font-style: italic;
+}
+.start-btn {
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px var(--white), 0 0 11px var(--white), 0 0 1rem var(--white), 0 0 2.5rem var(--orange), 0 0 5rem var(--light-coral), 0 0 5rem var(--red), 0 0 6rem var(--orange), 0 0 9rem var(--orange);
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}

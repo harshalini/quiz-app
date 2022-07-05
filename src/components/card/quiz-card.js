@@ -12,7 +12,7 @@ export const QuizCard = () => {
                         <span>{quizName}</span>
                         <p>{desc}</p>
                         <div className="quiz-btn">
-                            <Link to="/"><button>Play now</button></Link>
+                            <Link to= "/rules"><button>Play now</button></Link>
                         </div>
                     </div>
                 </div>
