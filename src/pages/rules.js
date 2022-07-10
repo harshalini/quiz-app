@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const Rules = () => {
   return (
     <div className="rules-div">
@@ -25,7 +27,7 @@ export const Rules = () => {
         </ul>
       </div>
       <div className="quiz-btn">
-        <button className="start-btn">Play now</button>
+        <Link to= "/quiz"><button className="start-btn">Play now</button></Link>
       </div>
     </div>
   )

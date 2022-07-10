@@ -1,0 +1,68 @@
+.quiz-div {
+    background-color: var(--white);
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 0.5rem var(--primary-color), 0 15px 12px var(--white);
+}
+.quiz-question {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.question-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.opt-text {
+    border: solid 2px black;
+    width: 80%;
+    margin: auto;
+    margin: 1rem auto;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+.button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.button.quit-btn {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.select {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.qn-div {
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+}
+.quiz-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: solid 5px palevioletred;
+    color: var(--white);
+    padding: 0 0.5rem;
+}
+
+.disabled {
+    opacity: 40%;
+}
+
+button.disabled:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    cursor: default;
+}
