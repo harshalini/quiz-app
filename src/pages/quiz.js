@@ -2,13 +2,12 @@ import { useState } from "react";
 import { Navbar } from "../layout/navbar/navbar";
 import { useNavigate } from "react-router-dom";
 import { useQuizQues } from "../context/quizQue-context";
-
 export const QuizPage = () => {
-    const { categoryQues, setScore } = useQuizQues();
-
-    const [selectedOption, setSelectedOption] = useState()
+    const { categoryQues, setScore, score, selectedArr, setSelectedArr } = useQuizQues();
+    
     const [currQue, setCurrQue] = useState(0);
     const [disable, setDisable] = useState(true)
+    const [selectedOption, setSelectedOption] = useState()
 
     const navigate = useNavigate();
 
@@ -17,13 +16,15 @@ export const QuizPage = () => {
         setSelectedOption(0)
         if (currQue === 4)
             navigate("/result")
+        setDisable(true)
     }
 
     const checkHandler = (opt) => {
         setSelectedOption(opt)
         if (opt === categoryQues[currQue].correctAns)
-            setScore(score => score + 1)
+            setScore(score => score + 5)
         setDisable(false)
+        setSelectedArr([...selectedArr, opt])
     }
 
     const selectHandler = (opt) => {
@@ -43,7 +44,9 @@ export const QuizPage = () => {
         <div>
             <Navbar />
             <div className="qn-div">
+                <span style={{color: "white"}}>Question: {currQue + 1}/5</span>
                 <span className="quiz-name">{categoryQues[currQue].quizCat}</span>
+                <span style={{color: "white"}}>Score: {score}</span>
             </div>
             <div className="quiz-div">
                 <span className="quiz-question">{categoryQues[currQue].question}</span>
@@ -71,7 +74,7 @@ export const QuizPage = () => {
                         onClick={getNextQueHandler}
                         className={disable ? `button disabled` : `button next-btn`}
                         disabled={disable}>
-                        Next question
+                        {currQue === 4 ? "Submit": "Next Question"}
                     </button>
                 </div>
             </div>

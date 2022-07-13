@@ -65,7 +65,7 @@ export const Questions = [
     },
     {
         id: uuid(),
-        question: "The Versatile Bollywood actor Irrfan Khan, who recently passed away, had won National award for which movie?",
+        question: "The Versatile Bollywood actor Late Irrfan Khan, had won National award for which movie?",
         options: [
             {id: 1, opt: "Lunch Box"},
             {id: 2, opt: "Paan Singh Tomar"},
@@ -77,7 +77,7 @@ export const Questions = [
     },
     {
         id: uuid(),
-        question: "Which Following Ambris Puri Film Features the Iconic dialogue 'Mogambo Khush Hua'?",
+        question: "Which Following Amrish Puri Film Features the Iconic dialogue 'Mogambo Khush Hua'?",
         options: [
             {id: 1, opt: "Mr. India"},
             {id: 2, opt: "Damini"},
@@ -101,7 +101,7 @@ export const Questions = [
     },
     {
         id: uuid(),
-        question: "In film “zindagi na milengi dobara” , where did Three Friends Meet ?",
+        question: "In film “zindagi na milengi dobara”, where did Three Friends Meet?",
         options: [
             {id: 1, opt: "America"},
             {id: 2, opt: "Mumbai"},

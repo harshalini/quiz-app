@@ -27,7 +27,7 @@ export const Rules = () => {
         </ul>
       </div>
       <div className="quiz-btn">
-        <Link to= "/quiz"><button className="start-btn">Play now</button></Link>
+        <Link to="/quiz"><button className="start-btn">Play now</button></Link>
       </div>
     </div>
   )
