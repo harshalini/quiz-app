@@ -1,0 +1,73 @@
+:root {
+    --correct: #95CD41;
+    --wrong: red;
+}
+.score-card {
+    color: var(--white);
+    margin-top: -2.5rem;
+    margin-bottom: 3rem;
+    border-bottom: solid 3px var(--primary-color);
+    border-top: solid 3px palevioletred;
+}
+.que-partition {
+    height: 5px;
+    background-color: var(--background-color);
+}
+.result-opt {
+    cursor: default;
+}
+.green {
+    background-color: var(--correct);
+}
+.red {
+    background-color: var(--wrong);
+}
+.score-div {
+    margin-bottom: 3rem;
+}
+.final-score {
+    width: 30rem;
+    border: solid 5px palevioletred;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.more-btn button{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.more-btn button:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+}
+.social-handles {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    border: solid 3px var(--primary-color);
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.social-icon {
+    font-size: 2.5rem;
+    flex-basis: 30%;
+    color: var(--background-color);
+}
+.social-icon:hover {
+   opacity: 0.7;
+}
+.more-social {
+    display: flex;
+    width: 50%;
+    margin: 2rem auto 2rem auto;
+    justify-content: space-between;
+}
