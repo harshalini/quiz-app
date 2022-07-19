@@ -45,13 +45,13 @@ export const QuizPage = () => {
             <Navbar />
             <div className="qn-div">
                 <span style={{color: "white"}}>Question: {currQue + 1}/5</span>
-                <span className="quiz-name">{categoryQues[currQue].quizCat}</span>
+                <span className="quiz-name">{categoryQues[currQue]?.quizCat}</span>
                 <span style={{color: "white"}}>Score: {score}</span>
             </div>
             <div className="quiz-div">
-                <span className="quiz-question">{categoryQues[currQue].question}</span>
+                <span className="quiz-question">{categoryQues[currQue]?.question}</span>
                 <div className="question-options">
-                    {categoryQues[currQue].options.map(({ opt }) => {
+                    {categoryQues[currQue]?.options.map(({ opt }) => {
                         return (
                             <button
                                 onClick={() => checkHandler(opt)}
