@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 
 export const Result = () => {
+    document.title = "Vivir Quiz | Score Card"
     const { score } = useQuizQues();
     const { categoryQues, selectedArr } = useQuizQues();
 

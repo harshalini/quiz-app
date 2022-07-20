@@ -8,7 +8,7 @@ export const QuizPage = () => {
     const [currQue, setCurrQue] = useState(0);
     const [disable, setDisable] = useState(true)
     const [selectedOption, setSelectedOption] = useState()
-
+    document.title =`Vivir Quiz | ${categoryQues[currQue]?.quizCat}`
     const navigate = useNavigate();
 
     const getNextQueHandler = () => {

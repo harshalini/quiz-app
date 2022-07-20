@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 export const Rules = () => {
+  document.title = "Vivir Quiz | Rules"
   return (
     <div className="rules-div">
       <p className="rules-heading">Rules</p>
